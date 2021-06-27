@@ -1,0 +1,17 @@
+janeiro = float(input())
+fevereiro = float(input())
+marco = float(input())
+abril = float(input())
+media = (janeiro + fevereiro + marco + abril) / 4
+if media >= 5000:
+    print("parabéns,você fez uma média de = R$ ", end='', flush=True)
+    print(media)
+    media2 = media * 10 / 100 + media
+    print("você receberá um abono de 10%, o valor será de = R$", end='', flush=True)
+    print(media2)
+else:
+    print("infelismente você fez uma média de = R$ ", end='', flush=True)
+    print(media)
+    media2 = media * 3 / 100 + media
+    print("você receberá um abono de 3%, o valor será de = R$", end='', flush=True)
+    print(media2)
